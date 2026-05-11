@@ -1,0 +1,16 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+langchain==0.3.14
+langchain-openai==0.2.14
+langchain-core==0.3.29
+langchain-text-splitters==0.3.5
+langchain-community==0.3.14
+openai==1.59.4
+faiss-cpu
+pandas==2.2.3
+PyPDF2==3.0.1
+tiktoken==0.8.0
+pydantic==2.10.4
+httpx==0.28.1
+aiofiles==24.1.0

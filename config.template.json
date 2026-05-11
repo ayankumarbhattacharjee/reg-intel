@@ -1,0 +1,32 @@
+{
+  "_note": "Copy this file to config.json and fill in your values. Set AZURE_OPENAI_API_KEY as an env var — do not put the real key here.",
+  "azure_openai": {
+    "api_key": "REPLACE_WITH_ENV_VAR_OR_REAL_KEY",
+    "endpoint": "https://YOUR-RESOURCE.cognitiveservices.azure.com",
+    "api_version": "2024-10-21",
+    "chat_deployment": "gpt-4o",
+    "mini_deployment": "gpt-4o",
+    "embedding_deployment": "text-embedding-3-small"
+  },
+  "uc1": {
+    "chunks_pkl_path": "",
+    "faiss_index_path": "uc1_faiss_index",
+    "assets_path": "assets/uc1",
+    "top_k": 5,
+    "pages_returned": 3,
+    "qte_temperature": 0.5,
+    "qte_max_tokens": 200,
+    "rag_temperature": 0.6,
+    "rag_max_tokens": 2000
+  },
+  "uc2": {
+    "assets_path": "assets/uc2",
+    "chunk_size": 10000,
+    "chunk_overlap": 1000
+  },
+  "uc3": {
+    "assets_path": "assets/uc3",
+    "chunk_size": 10000,
+    "chunk_overlap": 1000
+  }
+}
