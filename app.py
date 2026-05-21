@@ -104,7 +104,7 @@ async def uc1_chat(request: ChatRequest):
             knowledge = []
             yield f"data: {json.dumps({'type': 'kb_error', 'content': str(exc)})}\n\n"
 
-        kb_rows = [{"Title": k["Title"], "Score": round(k["Score"] * 100, 1), "Page": k["PageNumber"]} for k in knowledge]
+        kb_rows = [{"Title": k["Title"], "Score": float(round(k["Score"] * 100, 1)), "Page": k["PageNumber"]} for k in knowledge]
         yield f"data: {json.dumps({'type': 'kb', 'content': kb_rows})}\n\n"
 
         # 3. Stream RAG response (blocking iterator — collect in thread then stream tokens)
